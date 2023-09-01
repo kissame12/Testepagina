@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Productos de Oficina, Aseo, Fármacos y más</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .barra-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .busqueda input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .busqueda button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .categorias ul {
+            list-style: none;
+            display: flex;
+            background-color: #F4F4F4;
+            padding: 10px;
+        }
+
+        .categorias ul li {
+            margin-right: 20px;
+        }
+
+        .categorias ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .categorias ul li a:hover {
+            color: #004080;
+        }
+
+        .ofertas {
+            padding: 20px;
+        }
+
+        .ofertas h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .oferta {
+            border: 1px solid #EAEAEA;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .oferta img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .formulario {
+            padding: 20px;
+            background-color: #F4F4F4;
+        }
+
+        .formulario label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .formulario button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="barra-superior">
+            <div class="logo">
+                <img src="logo.png" alt="Logo de la tienda">
+                <h1>Tienda Online</h1>
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+        </div>
+        <nav class="categorias">
+            <ul>
+                <li><a href="#">Oficina</a></li>
+                <li><a href="#">Aseo</a></li>
+                <li><a href="#">Fármacos</a></li>
+                <li><a href="#">Galgería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="oferta">
+            <img src="oferta1.jpg" alt="Oferta 1">
+            <p>¡Descuento del 20% en productos de oficina!</p>
+        </div>
+        <div class="oferta">
+            <img src="oferta2.jpg" alt="Oferta 2">
+            <p>Productos de aseo con precios rebajados.</p>
+        </div>
+        <!-- Agrega más ofertas aquí -->
+    </section>
+
+    <section class="formulario">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contacto: info@tiendaonline.com</p>
+    </footer>
+</body>
+</html>
+
